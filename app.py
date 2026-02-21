@@ -8,7 +8,7 @@ from openai import OpenAI
 
 #Here, we will leverage the streamlit package to set up a title, layout, caption and add an emoji as well. 
 
-st.set_page_config(page_title="NBA Lineup Chatbot", layout="wide")
+st.set_page_config(page_title="NBA Lineup Insights AI", layout="wide")
 st.title("🏀 NBA Lineup Analytics Chatbot")
 
 
