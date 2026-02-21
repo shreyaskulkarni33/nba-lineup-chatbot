@@ -10,19 +10,10 @@ from openai import OpenAI
 
 st.set_page_config(page_title="NBA Lineup Chatbot", layout="wide")
 st.title("🏀 NBA Lineup Analytics Chatbot")
-st.markdown(
-    """
-**Project overview**
 
-I built an interactive NBA lineup analytics chatbot that answers natural-language questions using a cleaned dataset of NBA 5-man lineup performance. The app loads lineup-level features such as minutes played, pace, and efficiency ratings and organizes them into analysis-ready summaries, allowing users to explore how lineup performance changes with playing time or pace. Rather than generating free-form answers, the chatbot is grounded in computed statistics that I explicitly provide, keeping responses transparent, reproducible, and data-backed. I handled the data cleaning, feature selection, aggregation logic, and overall product and UX design, while the AI layer is intentionally scoped to translating these precomputed summaries into clear, natural-language explanations.
-
-"""
-)
 
 st.markdown("Analyze NBA 5-man lineups from the 2023–2024 season using minutes played, pace, and efficiency metrics, grouped into minute buckets to study lineup stability and performance. Future iterations will add team, opponent, and positional context.")
            
-
-
 
 #I've purchased an OpenAPI key to leverage for this chatbot, however it will be stored in a secret file. I've also included a prompt and included Trust and Safety guardrails so questions stay pertinent to NBA Analytics  
 
